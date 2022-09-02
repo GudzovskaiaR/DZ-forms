@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form name="main" action="">
+        <div class="main-form__column">
+          <div class="main-form__item">
+            <label for="input_1" class="main-form__label">Your name</label>
+            <input
+              type="text"
+              value=""
+              name="Name"
+              placeholder="Enter your name"
+              class="main-form__input"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="main-form__item">
+            <label for="input_2" class="main-form__label">Your E-mail</label>
+            <input
+              type="text"
+              value=""
+              name="E-mail"
+              placeholder="Enter your E-mail"
+              class="main-form__input"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="main-form__item">
+            <label for="textarea" class="main-form__label"
+              >About your project</label
+            >
+            <textarea
+              id="textarea"
+              type="text"
+              name="nameTextarea"
+              class="main-form__textarea"
+              autocomplete="off"
+              class="main-form__textarea"
+            ></textarea>
+          </div>
+        </div>
+        <div class="main-form__column">
+          <label for="project" name="" class="main-form__label"
+            >Project budget?</label
+          >
+          <select
+            value="Not defined at the moment"
+            name="project"
+            id="select_1"
+            class="main-form__select"
+          >
+            <option selected value="1">1000$</option>
+            <option value="2">1500$</option>
+            <option value="3">2000$</option>
+          </select>
+          <label for="start" name="" class="main-form__label"
+            >When would you like to start?</label
+          >
+          <select
+            value="Not defined at the moment"
+            name="start"
+            id="select_2"
+            class="main-form__input"
+          >
+            <option selected value="1">1 days</option>
+            <option value="2">1 week</option>
+            <option value="3">1month</option>
+          </select>
+          <div class="main-form__item">
+            <label for="input_2" class="main-form__label"
+              >A you human? 22+11 = ?</label
+            >
+            <input
+              type="text"
+              value=""
+              placeholder="enter result"
+              name="Result"
+              class="main-form__input"
+            />
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="main-form__column">
+          <button type="submit" class="main-form__button" class="button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
